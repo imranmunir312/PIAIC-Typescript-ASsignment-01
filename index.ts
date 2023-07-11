@@ -58,3 +58,50 @@ console.log("Favourite Number: ", favNumber);
  * Date: 11/07/2023
  * Description: This is the main file of the TypeScript Assignment 1
  */
+
+// Question 11
+const names: String[] = ["Imran", "Haris", "Noman", "Aashir", "Aizaz"];
+
+names.forEach((friendName: String, index: number) =>
+  console.log(`${index + 1}. ${friendName}`)
+);
+
+// Question 12
+names.forEach((friendName: String) =>
+  console.log(`${friendName}, How are you?`)
+);
+
+// Question 13
+const favTransportation: String[] = ["Car", "Bike", "Train"];
+
+favTransportation.forEach((transportation: String) =>
+  console.log(`I would like to own a ${transportation} `)
+);
+
+// Question 14
+const guests: string[] = ["Imran", "Noman", "Aashir", "Aizaz"];
+
+guests.forEach((guest: String) =>
+  console.log(`Hi ${guest}, I would like to invite you to my dinner party`)
+);
+
+// Question 15
+console.log("Sorry, Aashir can't make it to dinner");
+
+// Replace Aashir with Izhar
+guests.splice(3, 1, "Izhar");
+
+guests.forEach((guest: String) =>
+  console.log(`Hi ${guest}, I would like to invite you to my dinner party`)
+);
+
+// Question 16
+console.log("Naveed, Rohan and Sameed are still to be invited");
+
+guests.unshift("Naveed");
+guests.splice(3, 0, "Rohan");
+guests.push("Sameed");
+
+guests.forEach((guest: String) =>
+  console.log(`Hi ${guest}, I would like to invite you to my dinner party`)
+);
