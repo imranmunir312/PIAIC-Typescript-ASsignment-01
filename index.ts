@@ -172,3 +172,299 @@ console.log(`${guests.length} guests are invited to my dinner party`);
 const rivers: string[] = ["indus", "nile", "amazon", "yangtze", "jhelum"];
 
 // Question 21
+
+interface Person {
+  name: string;
+  age: number;
+  country: string;
+}
+
+const person: Person = {
+  name: "Imran Munir",
+  age: 23,
+  country: "Pakistan",
+};
+
+// Question 22
+const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// numbers[numbers.length]
+
+numbers[numbers.length - 1];
+
+// Question 23
+let car: string = "bugati";
+
+console.log("Is car == 'bugati'? I predict True.");
+console.log(car == "bugati");
+
+console.log("Is car == 'subaru'? I predict False.");
+console.log(car == "subaru");
+
+console.log("Is car === 'bugati'? I predict True.");
+console.log(car === "bugati");
+
+console.log("Is car === 'subaru'? I predict False.");
+console.log(car === "subaru");
+
+console.log("Is car != 'bugati'? I predict False.");
+console.log(car != "bugati");
+
+console.log("Is car != 'subaru'? I predict True.");
+console.log(car != "subaru");
+
+console.log("Is car !== 'bugati'? I predict False.");
+console.log(car !== "bugati");
+
+console.log("Is car !== 'subaru'? I predict True.");
+console.log(car !== "subaru");
+
+console.log("Is car > 'bugati'? I predict False.");
+console.log(car > "bugati");
+
+console.log("Is car > 'subaru'? I predict False.");
+console.log(car > "subaru");
+
+// Question 24
+console.log("Is myName !== 'Noman'? I predict True.");
+console.log(myName !== "Noman");
+
+console.log("Is myName === 'Noman'? I predict False.");
+console.log(myName === "Noman");
+
+console.log("Test using lowercase");
+
+console.log("Is Name.toLowerCase() === 'noman'? I predict False.");
+console.log(myName.toLowerCase() === "noman");
+
+console.log("Is Name.toLowerCase() === 'imran'? I predict True.");
+console.log(myName.toLowerCase() === "imran");
+
+console.log(
+  "Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to"
+);
+
+const conditionalTestNum: number = 5;
+
+console.log("is conditionalTestNum == 5 ? I predict True.");
+console.log(conditionalTestNum === 5);
+
+console.log("is conditionalTestNum == 6 ? I predict False.");
+console.log(conditionalTestNum === 6);
+
+console.log("is conditionalTestNum != 5 ? I predict False.");
+console.log(conditionalTestNum !== 5);
+
+console.log("is conditionalTestNum != 6 ? I predict True.");
+console.log(conditionalTestNum !== 6);
+
+console.log("is conditionalTestNum > 5 ? I predict False.");
+console.log(conditionalTestNum > 5);
+
+console.log("is conditionalTestNum > 4 ? I predict True.");
+console.log(conditionalTestNum > 4);
+
+console.log("is conditionalTestNum < 5 ? I predict False.");
+console.log(conditionalTestNum < 5);
+
+console.log("is conditionalTestNum < 6 ? I predict True.");
+console.log(conditionalTestNum < 6);
+
+console.log("is conditionalTestNum >= 5 ? I predict True.");
+console.log(conditionalTestNum >= 5);
+
+console.log("is conditionalTestNum >= 6 ? I predict False.");
+console.log(conditionalTestNum >= 6);
+
+console.log("is conditionalTestNum <= 5 ? I predict True.");
+console.log(conditionalTestNum <= 5);
+
+console.log("is conditionalTestNum <= 4 ? I predict False.");
+console.log(conditionalTestNum <= 4);
+
+console.log("Tests using 'and' and 'or' operators");
+
+console.log(
+  "is conditionalTestNum == 5 && conditionalTestNum == 5 ? I predict True."
+);
+console.log(conditionalTestNum == 5 && conditionalTestNum == 5);
+
+console.log(
+  "is conditionalTestNum == 5 && conditionalTestNum == 6 ? I predict False."
+);
+console.log(conditionalTestNum == 5 && conditionalTestNum >= 6);
+
+console.log(
+  "is conditionalTestNum == 5 || conditionalTestNum == 6 ? I predict True."
+);
+
+console.log(conditionalTestNum == 5 || conditionalTestNum == 6);
+
+console.log(
+  "is conditionalTestNum == 6 || conditionalTestNum > 6 ? I predict False."
+);
+console.log(conditionalTestNum == 6 || conditionalTestNum > 6);
+
+console.log("Test whether an item is in a array");
+
+const testArray: number[] = [1, 2, 3, 4, 5];
+
+console.log("is 5 in testArray ? I predict True.");
+console.log(testArray.includes(5));
+
+console.log("Test whether an item is not in a array");
+
+console.log("is 6 in testArray ? I predict False.");
+console.log(testArray.includes(6));
+
+// Question 25
+let alien_color: string = "green";
+
+if (alien_color === "green") {
+  console.log("You just earned 5 points");
+}
+
+if (alien_color !== "green") {
+}
+
+// Question 26
+
+if (alien_color === "green") {
+  console.log("You just earned 5 points");
+} else {
+  console.log("You just earned 10 points");
+}
+
+alien_color = "red";
+
+if (alien_color === "green") {
+  console.log("You just earned 5 points");
+} else {
+  console.log("You just earned 10 points");
+}
+
+// Question 27
+
+alien_color = "green";
+
+if (alien_color === "green") {
+  console.log("You just earned 5 points");
+} else if (alien_color === "yellow") {
+  console.log("You just earned 10 points");
+} else if (alien_color === "red") {
+  console.log("You just earned 15 points");
+}
+
+alien_color = "yellow";
+
+if (alien_color === "green") {
+  console.log("You just earned 5 points");
+} else if (alien_color === "yellow") {
+  console.log("You just earned 10 points");
+} else if (alien_color === "red") {
+  console.log("You just earned 15 points");
+}
+
+alien_color = "red";
+
+if (alien_color === "green") {
+  console.log("You just earned 5 points");
+} else if (alien_color === "yellow") {
+  console.log("You just earned 10 points");
+} else if (alien_color === "red") {
+  console.log("You just earned 15 points");
+}
+
+// Question 28
+
+let age: number = 23;
+
+if (age < 2) {
+  console.log("You are a baby");
+} else if (age >= 2 && age < 4) {
+  console.log("You are a toddler");
+} else if (age >= 4 && age < 13) {
+  console.log("You are a kid");
+} else if (age >= 13 && age < 20) {
+  console.log("You are a teenager");
+} else if (age >= 20 && age < 65) {
+  console.log("You are an adult");
+} else if (age >= 65) {
+  console.log("You are an elder");
+}
+
+// Question 29
+
+const favouriteFruit: string[] = ["apple", "banana", "peaches"];
+
+if (favouriteFruit.includes("apple")) {
+  console.log("You really like apples");
+}
+
+if (favouriteFruit.includes("banana")) {
+  console.log("You really like bananas");
+}
+
+if (favouriteFruit.includes("orange")) {
+  console.log("You really like oranges");
+}
+
+if (favouriteFruit.includes("peaches")) {
+  console.log("You really like peaches");
+}
+
+if (favouriteFruit.includes("grapes")) {
+  console.log("You really like grapes");
+}
+
+// Question 30
+
+const usernames: string[] = ["admin", "noman", "aashir", "aizaz", "izhar"];
+
+usernames.forEach((username: string) => {
+  if (username === "admin") {
+    console.log("Hello admin, would you like to see a status report?");
+  } else {
+    console.log(`Hello ${username},  thank you for logging in again`);
+  }
+});
+
+// Question 31
+
+usernames.length = 0;
+
+if (usernames.length === 0) {
+  console.log("We need to find some users!");
+}
+
+// Question 32
+const currentUsers: string[] = ["admin", "noman", "aashir", "aizaz", "izhar"];
+const newUsers: string[] = ["ahsan", "imran", "sanoodia", "aizaz", "izhar"];
+
+newUsers.forEach((newUser: string) => {
+  if (
+    currentUsers.find(
+      (user: string) => user.toLowerCase() === newUser.toLowerCase()
+    )
+  ) {
+    console.log(`${newUser} is already taken, please enter a new username`);
+  } else {
+    console.log(`${newUser} is available`);
+  }
+});
+
+// Question 33
+
+const ordinalNumbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+ordinalNumbers.forEach((ordinalNumber: number) => {
+  if (ordinalNumber === 1) {
+    console.log(`${ordinalNumber}st`);
+  } else if (ordinalNumber === 2) {
+    console.log(`${ordinalNumber}nd`);
+  } else if (ordinalNumber === 3) {
+    console.log(`${ordinalNumber}rd`);
+  } else {
+    console.log(`${ordinalNumber}th`);
+  }
+});
