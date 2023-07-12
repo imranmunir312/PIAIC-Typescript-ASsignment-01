@@ -489,4 +489,72 @@ animals.forEach((animal: string) => {
 
 console.log("Any of these animals would make a great pet");
 
-// Question 36
+// Question 36 and 37
+
+const makeShirt = (
+  size: string = "large",
+  text: string = "I love TypeScript"
+) => {
+  console.log(`Size: ${size}, Text: ${text}`);
+};
+
+makeShirt("small", "T-Shirt");
+
+makeShirt();
+
+makeShirt("medium");
+
+makeShirt("XXL", "I love JavaScript");
+
+// Question 38
+function describeCities(city: string, country: string = "Pakistan") {
+  console.log(`${city} is in ${country}`);
+}
+
+describeCities("Karachi");
+
+describeCities("Lahore");
+
+describeCities("Milan", "Italy");
+
+// Question 39
+
+function cityCountry(city: string, country: string) {
+  console.log(`"${city}, ${country}"`);
+}
+
+cityCountry("Karachi", "Pakistan");
+cityCountry("Lahore", "Pakistan");
+cityCountry("Milan", "Italy");
+
+// Question 40
+interface Album {
+  artistName: string;
+  albumTitle: string;
+  noOfTracks?: string;
+}
+
+function makeAlbum(
+  artistName: string,
+  albumTitle: string,
+  noOfTracks?: string
+): Album {
+  const album: Album = {
+    artistName,
+    albumTitle,
+  };
+
+  if (noOfTracks) {
+    album.noOfTracks = noOfTracks;
+  }
+
+  return album;
+}
+
+console.log(makeAlbum("Imran", "My Album"));
+console.log(makeAlbum("Noman", "My Album 2"));
+console.log(makeAlbum("Aashir", "My Album 3", "10"));
+
+console.log(makeAlbum("Imran", "My Album", "10"));
+
+// Question 41
