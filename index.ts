@@ -558,3 +558,67 @@ console.log(makeAlbum("Aashir", "My Album 3", "10"));
 console.log(makeAlbum("Imran", "My Album", "10"));
 
 // Question 41
+
+const magicians: string[] = ["Imran", "Noman", "Aashir", "Aizaz"];
+const originalMagicians: string[] = [...magicians];
+
+function showMagicians(magicians: string[]) {
+  magicians.forEach((magician: string) => {
+    console.log(magician);
+  });
+}
+
+showMagicians(magicians);
+
+// Question 42
+function makeGreat(magicians: string[]) {
+  magicians.forEach((magician: string, index: number) => {
+    magicians[index] = `The Great ${magician}`;
+  });
+}
+
+makeGreat(magicians);
+
+showMagicians(magicians);
+
+// Question 43
+function makeGreatReturn(magicians: string[]): string[] {
+  return magicians.map(
+    (magician: string, index: number) => `The Great ${magician}`
+  );
+}
+
+const greatMagicians: string[] = makeGreatReturn(originalMagicians);
+
+showMagicians(originalMagicians);
+showMagicians(greatMagicians);
+
+// Question 44
+
+function makeSandwich(...items: string[]) {
+  console.log("Sandwich Items: ", items.join(", "));
+}
+
+makeSandwich("bread", "cheese", "chicken", "bread");
+makeSandwich("bread", "cheese", "bread");
+makeSandwich("bread", "chicken", "cheese", "Paities", "bread");
+
+// Question 45
+
+function makeCar(manufacturer: string, model: string, ...rest: Object[]) {
+  const car = {
+    manufacturer,
+    model,
+  };
+
+  rest.forEach((item: Object) => {
+    Object.assign(car, item);
+  });
+
+  return car;
+}
+
+console.log(makeCar("Toyota", "Corolla", { color: "red" }, { year: 2020 }));
+console.log(
+  makeCar("Honda", "Civic", { color: "white" }, { year: 2021 }, { engine: 1.8 })
+);
