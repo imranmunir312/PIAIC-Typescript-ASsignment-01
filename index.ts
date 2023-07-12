@@ -468,3 +468,25 @@ ordinalNumbers.forEach((ordinalNumber: number) => {
     console.log(`${ordinalNumber}th`);
   }
 });
+
+// Question 34
+
+const pizzas: string[] = ["pepperoni", "chicken", "beef", "cheese"];
+
+pizzas.forEach((pizza: string) => {
+  console.log(`I like ${pizza} pizza`);
+});
+
+console.log("I like cheese pizza very much");
+console.log("I really love pizza");
+
+// Question 35
+const animals: string[] = ["cat", "dog", "lion"];
+
+animals.forEach((animal: string) => {
+  console.log(`A ${animal} would make a great pet`);
+});
+
+console.log("Any of these animals would make a great pet");
+
+// Question 36
