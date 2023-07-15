@@ -1,0 +1,12 @@
+{
+  "name": "piaic-typescript-assignment-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/imranmunir312/PIAIC-Typescript-ASsignment-01.git",
+  "author": "imranmunir312 <imranmunir312@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --project ./tsconfig.json",
+    "start": "node index.js"
+  }
+}

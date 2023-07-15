@@ -571,7 +571,7 @@ function showMagicians(magicians: string[]) {
 showMagicians(magicians);
 
 // Question 42
-function makeGreat(magicians: string[]) {
+function makeGreat(magicians: string[]): void {
   magicians.forEach((magician: string, index: number) => {
     magicians[index] = `The Great ${magician}`;
   });
